@@ -1,1 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 490" width="700" height="490">
+  <title>Flag of Brazil</title>
+  <rect width="700" height="490" fill="#009c3b"/>
+  <polygon points="350,58 642,245 350,432 58,245" fill="#ffdf00"/>
+  <circle cx="350" cy="245" r="122" fill="#002776"/>
+  <path d="M232 212 Q352 188 470 262 L466 284 Q352 214 236 234 Z" fill="#ffffff"/>
+</svg>
 
