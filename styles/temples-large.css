@@ -10,14 +10,13 @@
   }
 
   /* Always show the navigation as a horizontal row */
-  .navigation {
+  nav {
     grid-column: auto;
-    display: flex;
     flex-direction: row;
-    margin-top: 0;
   }
 
-  .navigation a {
+  nav a {
+    display: block;
     padding: 0.75rem 1.1rem;
   }
 
