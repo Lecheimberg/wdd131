@@ -20,9 +20,9 @@
     padding: 0.75rem 1.1rem;
   }
 
-  /* Responsive multi-column album */
+  /* Uniform 3 x 3 album in larger views */
   .album {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.75rem 1.25rem;
   }
 }
