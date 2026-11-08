@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album | Lucas Perez Echeimberg | WDD 131</title>
+  <meta name="description" content="A responsive temple picture album by Lucas Perez Echeimberg for WDD 131 – Dynamic Web Fundamentals.">
+  <meta name="author" content="Lucas Perez Echeimberg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <span class="site-title">Temple Album</span>
+    <button id="menu" type="button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+    <nav class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <div class="album">
+      <figure>
+        <img src="images/temple-placeholder.svg" alt="Placeholder image for the Salt Lake Utah Temple" width="400" height="267" loading="lazy">
+        <figcaption>Salt Lake Utah</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.svg" alt="Placeholder image for the São Paulo Brazil Temple" width="400" height="267" loading="lazy">
+        <figcaption>São Paulo Brazil</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.svg" alt="Placeholder image for the San Diego California Temple" width="400" height="267" loading="lazy">
+        <figcaption>San Diego California</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.svg" alt="Placeholder image for the Laie Hawaii Temple" width="400" height="267" loading="lazy">
+        <figcaption>Laie Hawaii</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.svg" alt="Placeholder image for the Rome Italy Temple" width="400" height="267" loading="lazy">
+        <figcaption>Rome Italy</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.svg" alt="Placeholder image for the Washington D.C. Temple" width="400" height="267" loading="lazy">
+        <figcaption>Washington D.C.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.svg" alt="Placeholder image for the Provo City Center Temple" width="400" height="267" loading="lazy">
+        <figcaption>Provo City Center</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.svg" alt="Placeholder image for the Campinas Brazil Temple" width="400" height="267" loading="lazy">
+        <figcaption>Campinas Brazil</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple-placeholder.svg" alt="Placeholder image for the Bountiful Utah Temple" width="400" height="267" loading="lazy">
+        <figcaption>Bountiful Utah</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Lucas Perez Echeimberg | Utah, USA</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
