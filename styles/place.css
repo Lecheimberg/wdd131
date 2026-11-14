@@ -1,0 +1,146 @@
+:root {
+  --green: #006b2d;
+  --yellow: #fedd00;
+  --blue: #012169;
+  --white: #ffffff;
+  --text: #1b1b1b;
+  --panel-bg: rgba(255, 255, 255, 0.88);
+  --heading-font: "Montserrat", Arial, sans-serif;
+  --body-font: "Open Sans", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  color: var(--text);
+  background-color: var(--white);
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+}
+
+/* Header */
+header {
+  background-color: var(--green);
+  border-bottom: 0.75rem solid var(--yellow);
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+}
+
+/* Hero image */
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 0.5rem solid var(--blue);
+}
+
+/* Data and Weather sections */
+main section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+main section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.data {
+  border-bottom: 1px solid #dddddd;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 0.75rem;
+  font-size: 1.1rem;
+}
+
+dt {
+  font-weight: 600;
+  text-align: right;
+}
+
+dd {
+  text-align: left;
+}
+
+.weather-icon {
+  display: block;
+  margin: 0 auto 1.25rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  line-height: 1.6;
+}
+
+footer .credit {
+  font-size: 0.85rem;
+}
+
+/* Wider view */
+@media (min-width: 1000px) {
+  main {
+    position: relative;
+  }
+
+  main section {
+    position: absolute;
+    background-color: var(--panel-bg);
+    padding: 0 1.25rem 1.25rem;
+    text-align: left;
+    width: 20rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .data {
+    top: 2rem;
+    left: 2rem;
+    border-bottom: none;
+  }
+
+  .weather {
+    bottom: 2.5rem;
+    right: 2rem;
+  }
+
+  main section h2 {
+    background-color: var(--green);
+    color: var(--white);
+    margin: 1rem -1.25rem 1rem;
+    padding: 0.6rem 1.25rem;
+    font-size: 1.6rem;
+  }
+
+  dl {
+    font-size: 1rem;
+    gap: 0.4rem 0.6rem;
+  }
+
+  /* SVG icon only in mobile view; emoji pseudo-element in wider view */
+  .weather-icon {
+    display: none;
+  }
+
+  .weather h2::after {
+    content: " ⛅";
+  }
+}
