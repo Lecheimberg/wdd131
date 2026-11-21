@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtered Temple Album | Lucas Perez Echeimberg | WDD 131</title>
+  <meta name="description" content="A responsive, filterable temple picture album by Lucas Perez Echeimberg for WDD 131 – Dynamic Web Fundamentals.">
+  <meta name="author" content="Lucas Perez Echeimberg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <span class="site-title">Temple Album</span>
+    <button id="menu" type="button" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+    <nav class="navigation">
+      <a href="#" class="active">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <div class="album"></div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Lucas Perez Echeimberg | Utah, USA</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
